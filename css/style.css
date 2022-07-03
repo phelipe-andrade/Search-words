@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-family: 'Righteous', cursive;
+}
+
+
+body{
+  background:#705F6D;
+}
+
+.content{
+  height: 100vh;
+  position: absolute;
+  width: 650px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title{
+  text-align: center;
+  padding-top: 70px;
+}
+
+.title h1{
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.title p{
+  margin-top: 10px;
+  font-size: 1.125rem;
+  letter-spacing: .5px;
+  font-weight: 100;
+}
+
+.title span{
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+.search{
+  padding: 40px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.write{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.write li{
+  width: 80px;
+  height: 80px;
+  border: 6px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.write li:hover{
+  box-shadow: inset 0 0 10px #11BFBF, 0 0 10px #11BFBF;
+  transition: .1s;
+}
+
+.write li.active{
+  box-shadow: inset 0 0 10px #11BFBF, 0 0 10px #11BFBF;
+}
+
+.write li:nth-child(n+2){
+  margin-left: 15px;
+}
+
+.btn-search{
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  
+  border: 4px solid #fff;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+}
+
+.btn-search:hover{
+  box-shadow: inset 0 0 10px #11BFBF, 0 0 10px #11BFBF;
+  text-shadow:  0 0 10px #11BFBF;
+  transition: .15s;
+}
+
+.container-result{
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-result.active{
+  display: flex;
+}
+
+.title-result{
+  padding-bottom: 10px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.result{
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  background: #5A5154;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 10px 0;
+}
+
+.result li{
+  font-size: 2rem;
+  letter-spacing: 1px;
+  padding: 5px 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
